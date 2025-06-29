@@ -8,8 +8,8 @@
     ],
     "routes": [
       {
-        "src": "/api/transcribe(.*)",
-        "dest": "api/transcribe.py"
+        "src": "/api/transcribe",
+        "dest": "/api/transcribe.py"
       }
     ]
   }
