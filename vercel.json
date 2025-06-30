@@ -2,22 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/transcribe.py",
+      "src": "api/index.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
         "runtime": "python3.9"
       }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/api/transcribe.py"
-    },
-    {
-      "src": "/api/transcribe",
-      "dest": "/api/transcribe.py"
     }
   ]
 }
